@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    apache:
+        image: prestashop/base:7.1-apache
+        ports:
+            - "80:80"
+        volumes:
+            - ./:/var/www/html
