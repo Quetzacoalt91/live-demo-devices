@@ -1,10 +1,10 @@
 $(function(){
-
+  var baseDomain = window.baseDomain || 'demo.prestashop.com';
   var domain = {
-		"api": "https://api.demo.prestashop.com/api/v1/",
-		"socket" : "https://socket.demo.prestashop.com",
-		"reverseProxy" : "demo.prestashop.com",
-		"backoffice" : "demo.prestashop.com/admin-dev/index.php?controller=AdminLogin&email=demo@prestashop.com&password=prestashop_demo&redirect=AdminModules"
+		"api": `https://api.${baseDomain}/api/v1/`,
+		"socket" : `https://socket.${baseDomain}`,
+		"reverseProxy" : baseDomain,
+		"backoffice" : `${baseDomain}/admin-dev/index.php?controller=AdminLogin&email=demo@prestashop.com&password=prestashop_demo&redirect=AdminModules`
 	};
 
     function removeLoading(){

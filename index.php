@@ -108,6 +108,11 @@ function translate($s)
 		</div>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="/js/socket.io.js"></script>
+    
+    <?php if (getenv('MS_DOMAIN') !== false) { ?>
+    <script>var baseDomain = <?php echo json_encode(getenv('MS_DOMAIN')); ?>;</script>
+    <?php } ?>
+
 		<script src="/js/app.js"></script>
 		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WHRX84"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
