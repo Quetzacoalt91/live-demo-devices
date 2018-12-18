@@ -106,7 +106,7 @@ $(function(){
 			});
 			setTimeout(() => {
                 $("#framelive").attr("src", frontUrl);
-            }, 7000);
+            }, 10000);
             
             // Apply URLs
             $(".btn-explore-front").attr('href', frontUrl);
